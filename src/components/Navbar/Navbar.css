@@ -1,0 +1,24 @@
+nav{
+    height:8vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:rgb(43,43,43);
+}
+nav a {
+    text-decoration:none;
+    color:white;
+    margin-left:1rem;
+    margin-right:1rem;
+}
+.login{
+    color:rgb(32,32,203);
+    transition:all 0.3s;
+    font-size:1.5rem;
+
+}
+.login:hover{
+    background-color:rgb(32,32,203);
+    color:rgb(255, 255, 255);
+    border-radius:2rem;
+}

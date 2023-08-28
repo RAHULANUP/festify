@@ -1,0 +1,12 @@
+.card{
+    width:20rem;
+    height:20rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:rgb(47, 46, 46);
+    color:rgb(255, 255, 255);
+    margin:1rem;
+    border-radius:2rem;
+    box-shadow:1px 5px 4px 2px rgba(0,0,255,0.3);
+}

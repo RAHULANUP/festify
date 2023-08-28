@@ -1,0 +1,86 @@
+span{
+    font-size:5rem;
+}
+.pageone{
+    height:92vh;
+    background-color:rgb(43,43,43);
+    color:rgb(255,255,255);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.pageone a{
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+}
+
+.loginone{
+    width:5rem;
+    height:3rem;
+    background-color:rgb(94, 94, 201);
+    border-radius:3rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:all 0.5s;
+}
+.loginone:hover{
+    background-color:rgb(255,255,255);
+}
+.color{
+    color:rgb(156, 156, 235);
+}
+.fw300{
+    font-weight:300;
+}
+
+.code{
+    width:20rem;
+    height:20rem;
+}
+
+
+.pagetwo{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.astronaut{
+    width:30rem;
+    height:30rem;
+}
+h1{
+    font-size:3rem;
+}
+
+.footer{
+    background-color:rgb(46, 63, 178);
+    border-top-left-radius:2rem;
+    border-top-right-radius:2rem;
+    color:rgb(255, 255, 255);
+    height:30vh;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.footer a{
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+    margin-left:2rem;
+}
+img{
+    height:2rem;
+    width:2rem;
+}
+@media (max-width:670px){
+    .span{
+        font-size:2rem;
+    }
+    .pageone{
+        flex-direction:column;
+    }
+    .pagetwo{
+        flex-direction:column;
+    }
+}
