@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAYDyHs1MlYDRKF3HX2U0DVHuSbu8t2Mhs",
-  authDomain: "festify-8912f.firebaseapp.com",
-  projectId: "festify-8912f",
-  storageBucket: "festify-8912f.appspot.com",
-  messagingSenderId: "19466756330",
-  appId: "1:19466756330:web:66ad43766ea85af48c7793",
-  measurementId: "G-9PM7XD6CRW"
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGE_SENDER_ID,
+  appId: process.env.APP_ID,
+  measurementId: process.env.MEASUREMENT_ID
 };
 
 
