@@ -10,9 +10,7 @@ function Navbar(){
                 <div>
                     <Link to='/'>festify</Link>
                 </div>
-                <div>
-                    <Link to='/event'>Events</Link>
-                    <span className='login'><Link  to='/login'>LogIn</Link></span>
+                <div className="nav_content">
                 </div>
             </nav>
         </>

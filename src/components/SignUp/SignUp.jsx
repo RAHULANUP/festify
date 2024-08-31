@@ -1,36 +1,35 @@
 import React,{useState} from "react";
-import "./LogIn.css";
+import "./SignUp.css";
 import {Link,useNavigate} from "react-router-dom";
 import {app} from "../../firebase";
-import {getAuth,signInWithEmailAndPassword} from "firebase/auth";
-
-function LogIn(){
+import {getAuth,createUserWithEmailAndPassword} from "firebase/auth";
+function SignUp(){
     const [name,setName] = useState("");
     const [password,setPassword] = useState("");
     const auth = getAuth(app);
     const navigate = useNavigate();
-    const handleLogin =(event)=>{
+    const handleSignup = (event) =>{
         event.preventDefault();
-        signInWithEmailAndPassword(auth,name,password)
+        createUserWithEmailAndPassword(auth,name,password)
         .then((user)=>{
-            console.log("LOGIN SUCCESSFUL");
-            navigate('/event');
+          console.log("SIGN UP SUCCESSFUL")
+          navigate('/event');
         })
-        .catch((err)=>console.log(err));
+        .catch(err=>console.log(err));
     }
     return(
         <>
             <div className='login-container'>
                 <form>
-                    <h2>LOG IN</h2>
+                    <h2>SIGN UP</h2>
                     <input type='text' placeholder='username' onChange={(e)=>setName(e.target.value)}/>
                     <input type='password' placeholder='password' onChange={(e)=>setPassword(e.target.value)}/>
                     <br/>
-                    <button onClick={handleLogin}>LOGIN</button>
+                    <button onClick={handleSignup}>SignUp</button>
                 </form>
-                <div className="create_account">Don't have an account : <Link to="/signup">Create Account</Link></div>
+                <div className="login_account">Already have an account : <Link to="/login">Login</Link></div>
             </div>
         </>
     );
 }
-export default LogIn;
+export default SignUp;

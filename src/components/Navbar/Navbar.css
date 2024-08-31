@@ -1,9 +1,15 @@
 nav{
     height:8vh;
+    width:100%;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    background-color:rgb(43,43,43);
+    background-color: rgb(20, 19, 19);
+}
+.nav_content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 nav a {
     text-decoration:none;
@@ -12,10 +18,12 @@ nav a {
     margin-right:1rem;
 }
 .login{
+    display:flex;
+    justify-content:center;
+    align-items:center;
     color:rgb(32,32,203);
     transition:all 0.3s;
-    font-size:1.5rem;
-
+    font-size:1rem;
 }
 .login:hover{
     background-color:rgb(32,32,203);

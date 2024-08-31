@@ -4,7 +4,7 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 
 import Lottie from "lottie-react";
-import code from "./code.json";
+import computer from "./computer.svg";
 import astronaut from "./astronaut.json";
 import facebook from "../imgsrc/facebook.png";
 import X from "../imgsrc/X.png";
@@ -24,21 +24,21 @@ function Home(){
                     <div>
                         <span data-aos='fade-up'>A</span>
                         <span>        </span> 
-                        <span className='color' data-aos='fade-up' data-aos-delay='200'>TECH</span>
+                        <span className='color' data-aos='fade-up' data-aos-delay='200'>tech</span>
                         <span>        </span> 
-                        <span className='fw300' data-aos='fade-up' data-aos-delay='400'>FEST</span>
+                        <span className='fw300' data-aos='fade-up' data-aos-delay='400'>fest</span>
                         <span>        </span>
-                        <span data-aos='fade-up' data-aos-delay='500'>LIKE</span>
+                        <span data-aos='fade-up' data-aos-delay='500'>like</span>
                     </div>
                     <div>
-                        <span className='fw300' data-aos='fade-up' data-aos-delay='700'>NEVER</span>
+                        <span className='fw300' data-aos='fade-up' data-aos-delay='700'>never</span>
                         <span>        </span>
-                        <span data-aos='fade-up' data-aos-delay='900'> BEFORE</span>
+                        <span data-aos='fade-up' data-aos-delay='900'> before</span>
                     </div>
                     <div className='loginone'><Link data-aos='fade-right' data-aos-delay='900' to='/login'>LOG IN</Link></div>
                 </div>
                 <div>
-                    <Lottie data-aos='fade-left' data-aos-delay='900' className='code' animationData={code} />
+                    <img className="computer" src={computer} alt='home image' data-aos="fade-left"/>
                 </div>
             </div>
             <div className='pagetwo'>
@@ -46,9 +46,9 @@ function Home(){
                     <Lottie data-aos='fade-up' data-aos-delay='300' className='astronaut' animationData={astronaut} />
                 </div>
                 <div>
-                    <h1 data-aos='fade-up'>ONE OF THE <span className='color'>BEST</span></h1> 
-                    <h1 data-aos='fade-up' data-aos-delay='300'>TECH FESTS</h1>
-                    <h1 data-aos='fade-up' data-aos-delay='500'>IN TOWN</h1>
+                    <h1 data-aos='fade-up'>one of the <span className='color'>best</span></h1> 
+                    <h1 data-aos='fade-up' data-aos-delay='300'>tech fests</h1>
+                    <h1 data-aos='fade-up' data-aos-delay='500'>in town</h1>
                 </div>
             </div>
             <div data-aos='fade-up' className='footer'>
